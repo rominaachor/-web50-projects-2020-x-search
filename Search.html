@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google</title>
+<style>
+    body{
+       display: flex;
+       overflow: hidden;
+    }
+    div.links{
+        margin-top: 30px;
+        float: right
+    }
+
+div.center{
+text-align: center;
+margin-left: 360px;
+margin-right: 325px;
+margin: auto;
+}
+
+img{
+    height: 92px;
+    width: 272px;
+   margin-top: 109px;
+object-fit: contain;
+object-position: center bottom;
+}
+
+.sb{
+  border-radius: 18px;
+  border-width: 1px;
+  width: 487px;
+  height: 39px;
+  display: flex;
+    flex: 1;
+    flex-wrap: wrap
+}
+
+.sbt, .sbt1{
+   background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bar {
+   text-align: right;
+   color: black;
+   text-decoration: none;
+   font-family: Arial, sans-serif;
+   width: 98%;
+   height: 24px;
+   position: fixed;
+}
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color:gray;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+    <a href="Advanced.html"> Advanced search</a>
+    <a href="Image.html">Google image</a>
+    </div>
+    <div class="center">
+<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" >
+    <form action="https://google.com/search" method="GET">
+        <input class="sb" type="text" name="q">
+        <Div Class="searchbutton">
+            <button class="sbt">Google Search</button>
+            <button class="sbt1" aria-label="I'm Feeling Lucky" id="lucky" name="btnI" role="button"
+                data-ved="0ahUKEwiNm6S0jYLrAhXslnIEHYv2B30QnRsIDg"> I'm Feeling Lucky </button>
+    </form>
+</div>
+</body>
+</html>
